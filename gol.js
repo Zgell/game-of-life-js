@@ -129,11 +129,16 @@ function mousePressed() {
             // Convert mouse coordinates to specific cell
             let cell_x = floor(mouseX / s);
             let cell_y = floor(mouseY / s);
-            // Flip the value of the cell
-            if (grid[cell_x][cell_y] == 0) {
-                grid[cell_x][cell_y] = 1;
-            } else {
-                grid[cell_x][cell_y] = 0;
+
+            // First check to make sure user isn't clicking on boundary cell
+            // ...as clicking on a boundary causes glitchy behaviour
+            if (cell_x != 0 && cell_y != 0 && cell_x != columns-1 && cell_y != rows-1) {
+                // Flip the value of the cell
+                if (grid[cell_x][cell_y] == 0) {
+                    grid[cell_x][cell_y] = 1;
+                } else {
+                    grid[cell_x][cell_y] = 0;
+                }
             }
         }
     }

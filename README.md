@@ -27,4 +27,4 @@ Tentative list of future features and bugfixes:
 - ~~Add indicator to show whether simulation is paused or not~~
 - Night mode?
 - Investigate whether or not it's possible to resize the board using a slightly different class implementation? Is it possible to make some kind of resizable matrix to use for the board?
-- Add a check when players are manually switching cells so that they can't override cells on the boundary, it causes glitchy behaviour
+- ~~Add a check when players are manually switching cells so that they can't override cells on the boundary, it causes glitchy behaviour~~
