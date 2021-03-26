@@ -1,5 +1,6 @@
 # The Game of Life - Browser Edition
 An implementation of John Conway's "Game of Life" cellular automaton in the browser using JavaScript and p5.js.
+[Click here to try it!](https://zgell.github.io/game-of-life-js/)
 
 ![A screenshot of the Game of Life](./img/teaser.png)
 
